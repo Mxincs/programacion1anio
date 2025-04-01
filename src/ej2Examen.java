@@ -60,7 +60,7 @@ public class ej2Examen
             {
 
                 //Sumamos las notas por estudiante y las guardamos en mediaEst para luego hacer la media
-                mediaEst += (double) notas [i][j];
+                mediaEst += notas [i][j];
 
                 //Contamos las veces que se repite cada estudiante para luego dividirlo en la salida
                 vecesEst++;
@@ -108,7 +108,7 @@ public class ej2Examen
             {
 
                 //Sumamos las notas por asignaturas y las guardamos en mediaAsig para luego hacer la media
-                mediaAsig += (double) notas[i][j];
+                mediaAsig += notas[i][j];
 
                 //Contamos las veces que se repite cada asignatura para luego dividirlo en la salida
                 vecesAsig++;
