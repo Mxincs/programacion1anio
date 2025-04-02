@@ -89,7 +89,7 @@ class Estudiante extends Persona
 
 
 
-public class Main
+public class Main_estudiantes
 {
     public static void main(String[] args)
     {
