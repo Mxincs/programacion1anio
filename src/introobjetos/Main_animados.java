@@ -5,20 +5,22 @@ class Dibujoanimado{
 
     String nombre;
     int anio;
-    String frase;
 
     //Constructor dibujos animados
     public Dibujoanimado (String nombre, int anio, String frase) {
         this.nombre=nombre;
         this.anio=anio;
-        this.frase=frase;
     }
 
     //Constructor predeterminado dibujos animados
     public Dibujoanimado () {
         this.nombre="Desconocido";
         this.anio=0;
-        this.frase="Desconocido";
+    }
+
+    //Devuelve una frase caracteristica
+    public void fraseCaracteristica() {
+        System.out.println("Frase Caracteristica");
     }
 
 }
@@ -38,6 +40,7 @@ class Hannabarbera extends Dibujoanimado {
     public Hannabarbera () {
         this.idioma="Desconocido";
     }
+
 }
 
 
@@ -55,6 +58,7 @@ class Warnerbros extends Dibujoanimado {
     public Warnerbros () {
         this.integrantes=0;
     }
+
 }
 
 
@@ -75,6 +79,12 @@ class Patolucas extends Warnerbros {
         this.disparos=0;
         this.color="Desconocido";
     }
+
+    //Devuelve la frase caracteristica del pato lucas
+    public void fraseCaracteristica() {
+        System.out.println("“Erez dezzpreciable…");
+    }
+
 }
 
 
@@ -95,6 +105,12 @@ class Pedropicapiedra extends Hannabarbera {
         this.trajes=0;
         this.decibelios=0;
     }
+
+    //Devuelve la frase caracteristica de pedro picapiedra
+    public void fraseCaracteristica() {
+        System.out.println("Wilmaaa ya estoy en caaasaa!");
+    }
+
 }
 
 
