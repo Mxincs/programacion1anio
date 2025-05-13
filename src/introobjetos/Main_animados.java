@@ -1,10 +1,14 @@
 package introobjetos;
 
+import java.util.ArrayList;
+import java.util.List;
+
 //Super clase dibujos animados
 class Dibujoanimado{
 
     String nombre;
     int anio;
+    String frase;
 
     //Constructor dibujos animados
     public Dibujoanimado (String nombre, int anio, String frase) {
@@ -18,9 +22,8 @@ class Dibujoanimado{
         this.anio=0;
     }
 
-    //Devuelve una frase caracteristica
-    public void fraseCaracteristica() {
-        System.out.println("Frase Caracteristica");
+    public String fraseCarac () {
+        return frase;
     }
 
 }
@@ -41,6 +44,10 @@ class Hannabarbera extends Dibujoanimado {
         this.idioma="Desconocido";
     }
 
+    public String fraseCarac () {
+        return frase;
+    }
+
 }
 
 
@@ -59,6 +66,10 @@ class Warnerbros extends Dibujoanimado {
         this.integrantes=0;
     }
 
+    public String fraseCarac () {
+        return frase;
+    }
+
 }
 
 
@@ -69,9 +80,10 @@ class Patolucas extends Warnerbros {
     String color;
 
     //Constructor patolucas
-    public Patolucas (int disparos, String color) {
+    public Patolucas (int disparos, String color, String frase) {
         this.disparos=disparos;
         this.color=color;
+        super(frase);
     }
 
     //Constructor predeterminado patolucas
@@ -80,9 +92,8 @@ class Patolucas extends Warnerbros {
         this.color="Desconocido";
     }
 
-    //Devuelve la frase caracteristica del pato lucas
-    public void fraseCaracteristica() {
-        System.out.println("“Erez dezzpreciable…");
+    public String fraseCarac () {
+        return frase;
     }
 
 }
@@ -93,6 +104,7 @@ class Patolucas extends Warnerbros {
 class Pedropicapiedra extends Hannabarbera {
     int trajes;
     int decibelios;
+    String alegrarPersonal = "Wilmaaa ya estoy en caaasaa!";
 
     //Constructor pedropicapiedra
     public Pedropicapiedra (int disparos, String color) {
@@ -106,11 +118,6 @@ class Pedropicapiedra extends Hannabarbera {
         this.decibelios=0;
     }
 
-    //Devuelve la frase caracteristica de pedro picapiedra
-    public void fraseCaracteristica() {
-        System.out.println("Wilmaaa ya estoy en caaasaa!");
-    }
-
 }
 
 
@@ -118,7 +125,22 @@ class Pedropicapiedra extends Hannabarbera {
 //MAINNN
 public class Main_animados {
 
+    private List<Dibujoanimado> listaDibujo = new ArrayList<>();
+
+    public void agregarDibujo (Dibujoanimado d) {
+        listaDibujo.add(d);
+    }
+
+    public void recorrerDibujos () {
+        for (Dibujoanimado d : listaDibujo) {
+            System.out.println("hola soy" + d.nombre + " y mi frase caracteristica es: " + );
+        }
+    }
+
     public static void main (String[] args) {
+
+
+
 
     }
 
