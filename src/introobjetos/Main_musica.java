@@ -87,3 +87,20 @@ public class Main_musica {
     }
 
 }
+
+/*
+PUEDETOCAR = TRUE 
+DINERO = 50;
+.
+.
+.
+.
+PUBLIC VOID ENSAYAR () {
+    IF (!PUEDETOCAR && DINERO>60) {
+        
+    } ELSE (FALSO) {
+
+    }
+}
+
+*/
