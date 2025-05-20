@@ -30,6 +30,7 @@ class instrumento {
     public void setStocar() {
         this.sTocar = sTocar;
     }
+    
 }
 //clase hija de instrumento
 class Guitarra extends instrumento {
